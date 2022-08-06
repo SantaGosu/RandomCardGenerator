@@ -9,4 +9,10 @@ window.onload = function genNumber() {
   document.getElementById("Number").innerHTML = Math.floor(
     Math.random() * 10 + 1
   );
+  let test = document.getElementById("Number");
+  0;
+  test.setAttribute(
+    "style",
+    "align-self: center; margin-top: 25%; font-size: xxx-large;"
+  );
 };
