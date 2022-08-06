@@ -2,3 +2,21 @@
 body {
   background-color: green;
 }
+#test {
+  margin-left: 30%;
+  margin-top: 6%;
+  height: 400px;
+  width: 300px;
+}
+.topIcon {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.Number {
+  align-self: center;
+  margin-top: 30%;
+}
+.bottomIcon {
+  margin-top: 35%;
+  margin-left: 70%;
+}
