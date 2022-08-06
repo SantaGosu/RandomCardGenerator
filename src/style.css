@@ -14,9 +14,10 @@ body {
 }
 .Number {
   align-self: center;
-  margin-top: 30%;
+  margin-top: 25%;
+  font-size: xxx-large;
 }
 .bottomIcon {
-  margin-top: 35%;
+  margin-top: 25%;
   margin-left: 70%;
 }
