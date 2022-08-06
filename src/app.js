@@ -5,7 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function CardFunc() {
-  let randomNum = Math.floor(Math.random(1) * 10);
-  return randomNum;
+window.onload = function genNumber() {
+  document.getElementById("Number").innerHTML = Math.floor(Math.random(1) * 10);
 };
