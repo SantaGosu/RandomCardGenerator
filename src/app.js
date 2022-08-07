@@ -29,11 +29,6 @@ window.onload = function genCard() {
     "style",
     "align-self: center; margin-top: 25%; font-size: xxx-large;"
   );
-  // let CardIcons = document.getElementById("Icon");
-  // CardIcons.innerHTML = Math.floor(Math.random() * 4 + 1);
-
-  // const arr = ["one", "two", "three", "four", "five"];
-  // let random = document.getElementById("test2");
-  // random.innerHTML = arr[Math.floor(Math.random() * arr.length)];
-  // test.setAttribute("style", "margin: 0px; padding: 0px;");
+  let CardIcons = document.getElementById("Icon");
+  CardIcons.innerHTML = Math.floor(Math.random() * 4 + 1);
 };
