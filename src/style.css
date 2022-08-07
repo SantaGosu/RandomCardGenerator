@@ -8,3 +8,7 @@ body {
   height: 400px;
   width: 300px;
 }
+.topIcon {
+  margin-top: 10px;
+  margin-left: 10px;
+}

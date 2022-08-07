@@ -29,6 +29,11 @@ window.onload = function genCard() {
     "style",
     "align-self: center; margin-top: 25%; font-size: xxx-large;"
   );
-  let CardIcons = document.getElementById("Icon");
-  CardIcons.innerHTML = Math.floor(Math.random() * 4 + 1);
+  const heart = document.getElementById("Heart");
+  const diamond = document.getElementById("diamond");
+  let testArr = [heart, diamond];
+  document.getElementById("test").innerHTML =
+    testArr[Math.floor(Math.random() * testArr.length)];
 };
+//THEY SAID YOU CAN JUST USE THE VALUES IN STEAD OF ICONS,
+//SO USE THE VALUES INSTEAD OF TRYING TO USE FONT AWESOME WHEN YOU GET BACK
