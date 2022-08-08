@@ -24,8 +24,8 @@ window.onload = function genCard() {
   ];
   document.getElementById("card").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
-  let NumElement = document.getElementsByClassName("card");
 
-  // document.getElementById("test").innerHTML =
-  //   testArr[Math.floor(Math.random() * testArr.length)];
+  let SecondArr = ["♥", "♦", "♣", "♠"];
+  document.getElementsByClassName("Suit").innerHTML =
+    SecondArr[Math.floor(Math.random() * SecondArr.length)];
 };
