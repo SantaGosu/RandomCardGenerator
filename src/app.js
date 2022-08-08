@@ -22,15 +22,10 @@ window.onload = function genCard() {
     "J",
     "A"
   ];
-  document.getElementById("Number").innerHTML =
+  document.getElementById("card").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
-  let NumElement = document.getElementById("Number");
-  NumElement.setAttribute(
-    "style",
-    "align-self: center; margin-top: 25%; font-size: xxx-large;"
-  );
+  let NumElement = document.getElementsByClassName("card");
 
-  let testArr = ["♦ ♦", "♥ ♥", "♠ ♠", "♣ ♣"];
-  document.getElementById("test").innerHTML =
-    testArr[Math.floor(Math.random() * testArr.length)];
+  // document.getElementById("test").innerHTML =
+  //   testArr[Math.floor(Math.random() * testArr.length)];
 };

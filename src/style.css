@@ -1,10 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
   background-color: green;
+  text-align: center;
 }
-#test {
-  margin-left: 30%;
-  margin-top: 6%;
+.card {
   height: 400px;
   width: 300px;
+  margin-left: 30%;
+  margin-bottom: 25%;
+  margin-top: 20%;
 }
