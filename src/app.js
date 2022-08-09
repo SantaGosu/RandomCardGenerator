@@ -4,6 +4,7 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { read } from "@popperjs/core";
 
 window.onload = function genCard() {
   const arr = [
@@ -25,8 +26,11 @@ window.onload = function genCard() {
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
-  // let heart.styles = "♥";
-  let suitArr = ["♥", "♦", "♣", "♠"];
+  var heart = "♥";
+  let diamond = "♦";
+  let clove = "♣";
+  let spade = "♠";
+  let suitArr = [heart, diamond, clove, spade];
   let genNumber = suitArr[Math.floor(Math.random() * suitArr.length)];
   document
     .getElementById("card")
