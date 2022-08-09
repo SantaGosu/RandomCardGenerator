@@ -25,9 +25,9 @@ window.onload = function genCard() {
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
-  let SecondArr = ["♥", "♦", "♣", "♠"];
-  let genNumber = SecondArr[Math.floor(Math.random() * SecondArr.length - 1)];
-  document.getElementsByClassName("suit").innerHTML = SecondArr[genNumber];
+  let suitArr = ["♥", "♦", "♣", "♠"];
+  let declareSuit = document.querySelector("suit");
+  declareSuit.innerHTML = suitArr[Math.floor(Math.random() * suitArr.length)];
 };
 
 //innerHTML = arr[ranNumber -1]      .querySelect = rand[ranNum - 1];
