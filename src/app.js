@@ -25,9 +25,15 @@ window.onload = function genCard() {
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
+  // let heart.styles = "♥";
   let suitArr = ["♥", "♦", "♣", "♠"];
-  let declareSuit = document.querySelector("suit");
-  declareSuit.innerHTML = suitArr[Math.floor(Math.random() * suitArr.length)];
+  let genNumber = suitArr[Math.floor(Math.random() * suitArr.length)];
+  document
+    .getElementById("card")
+    .getElementsByClassName("suit")[0].innerHTML = genNumber;
+  document
+    .getElementById("card")
+    .getElementsByClassName("suit")[1].innerHTML = genNumber;
 };
 
 //innerHTML = arr[ranNumber -1]      .querySelect = rand[ranNum - 1];
