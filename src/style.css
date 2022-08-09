@@ -1,17 +1,29 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-body {
-  background-color: green;
+#topIcon {
+  font-size: xx-large;
+  margin: 0px;
+  padding-bottom: 0%;
+}
+#bottomIcon {
+  margin-left: 80%;
+  margin-top: 35%;
+  font-size: xx-large;
+}
+#number {
   text-align: center;
+  padding-top: 40%;
+  font-size: xx-large;
 }
 .card {
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
   margin-left: 30%;
   margin-bottom: 5%;
   margin-top: 5%;
 }
-.heart,
-.diamond,
-.spade,
-.club {
+body {
+  background-color: green;
+}
+.button {
+  margin-left: 30%;
 }

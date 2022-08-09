@@ -22,10 +22,12 @@ window.onload = function genCard() {
     "J",
     "A"
   ];
-  document.getElementById("card").innerHTML =
+  document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
   let SecondArr = ["♥", "♦", "♣", "♠"];
-  document.getElementsByClassName("Suit").innerHTML =
-    SecondArr[Math.floor(Math.random() * SecondArr.length)];
+  let genNumber = SecondArr[Math.floor(Math.random() * SecondArr.length - 1)];
+  document.getElementsByClassName("suit").innerHTML = SecondArr[genNumber];
 };
+
+//innerHTML = arr[ranNumber -1]      .querySelect = rand[ranNum - 1];
