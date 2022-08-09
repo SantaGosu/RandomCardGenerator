@@ -23,15 +23,18 @@ window.onload = function genCard() {
     "J",
     "A"
   ];
+
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
-  var heart = "♥";
+  let heart = "♥";
   let diamond = "♦";
   let clove = "♣";
   let spade = "♠";
+
   let suitArr = [heart, diamond, clove, spade];
   let genNumber = suitArr[Math.floor(Math.random() * suitArr.length)];
+
   document
     .getElementById("card")
     .getElementsByClassName("suit")[0].innerHTML = genNumber;
@@ -39,5 +42,3 @@ window.onload = function genCard() {
     .getElementById("card")
     .getElementsByClassName("suit")[1].innerHTML = genNumber;
 };
-
-//innerHTML = arr[ranNumber -1]      .querySelect = rand[ranNum - 1];
