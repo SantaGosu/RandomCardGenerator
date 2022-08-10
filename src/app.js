@@ -27,18 +27,25 @@ window.onload = function genCard() {
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
-  function genNumber() {
-    let suitArr = ["♥", "♦", "♣", "♠"];
-    suitArr[Math.floor(Math.random() * suitArr.length)];
+  let cardSuit = genSuit();
 
-    if (document.getElementsByClassName("heart").value === "♥") {
-      document.getElementsByClassName("heart").style.color = "Red";
-    } else if (document.getElementsByClassName("diamond").value === "diamond") {
-      document.getElementById("diamond").style.color = "Red";
-    }
+  document.getElementsByClassName("suit")[0].innerHTML = cardSuit;
+  document.getElementsByClassName("suit")[1].innerHTML = cardSuit;
+  suitColor(cardSuit);
+
+  function genSuit() {
+    let suitArr = ["♥", "♦", "♣", "♠"];
+
+    return suitArr[Math.floor(Math.random() * suitArr.length)];
   }
 
-  document.getElementsByClassName("suit")[0].innerHTML = genNumber();
-  document.getElementsByClassName("suit")[1].innerHTML = genNumber();
+  function suitColor(getSuit) {
+    if (getSuit == "♥") {
+      document.getElementsByClassName("suit")[0].style.color = "Red";
+      document.getElementsByClassName("suit")[1].style.color = "Red";
+    } else if (getSuit == "♦") {
+      document.getElementsByClassName("suit")[0].style.color = "Red";
+      document.getElementsByClassName("suit")[1].style.color = "Red";
+    }
+  }
 };
-// can do else if
