@@ -27,18 +27,18 @@ window.onload = function genCard() {
   document.getElementById("number").innerHTML =
     arr[Math.floor(Math.random() * arr.length)];
 
-  let heart = "♥";
-  let diamond = "♦";
-  let clove = "♣";
-  let spade = "♠";
+  function genNumber() {
+    let suitArr = ["♥", "♦", "♣", "♠"];
+    suitArr[Math.floor(Math.random() * suitArr.length)];
 
-  let suitArr = [heart, diamond, clove, spade];
-  let genNumber = suitArr[Math.floor(Math.random() * suitArr.length)];
+    if (document.getElementsByClassName("heart").value === "♥") {
+      document.getElementsByClassName("heart").style.color = "Red";
+    } else if (document.getElementsByClassName("diamond").value === "diamond") {
+      document.getElementById("diamond").style.color = "Red";
+    }
+  }
 
-  document
-    .getElementById("card")
-    .getElementsByClassName("suit")[0].innerHTML = genNumber;
-  document
-    .getElementById("card")
-    .getElementsByClassName("suit")[1].innerHTML = genNumber;
+  document.getElementsByClassName("suit")[0].innerHTML = genNumber();
+  document.getElementsByClassName("suit")[1].innerHTML = genNumber();
 };
+// can do else if
